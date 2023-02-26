@@ -43,7 +43,7 @@ namespace proje
             {
                 stat = true;
             }
-            if (satildi.Checked == true)
+            if (satilmadi.Checked == true)
             {
                 stat = false;
             }

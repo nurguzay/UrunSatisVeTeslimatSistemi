@@ -47,32 +47,36 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(28, 158);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 20);
+            this.label3.Size = new System.Drawing.Size(113, 19);
             this.label3.TabIndex = 18;
             this.label3.Text = "ÜRÜN FİYATI";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(28, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 20);
+            this.label2.Size = new System.Drawing.Size(165, 19);
             this.label2.TabIndex = 17;
             this.label2.Text = "ÜRÜN AÇIKLAMASI";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(28, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(89, 19);
             this.label1.TabIndex = 16;
             this.label1.Text = "ÜRÜN ADI";
             // 
             // txtPrise
             // 
+            this.txtPrise.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtPrise.Location = new System.Drawing.Point(178, 158);
             this.txtPrise.Name = "txtPrise";
             this.txtPrise.Size = new System.Drawing.Size(125, 27);
@@ -80,6 +84,7 @@
             // 
             // txtUName
             // 
+            this.txtUName.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtUName.Location = new System.Drawing.Point(178, 47);
             this.txtUName.Name = "txtUName";
             this.txtUName.Size = new System.Drawing.Size(125, 27);
@@ -87,6 +92,7 @@
             // 
             // urunEkle
             // 
+            this.urunEkle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.urunEkle.Location = new System.Drawing.Point(130, 398);
             this.urunEkle.Name = "urunEkle";
             this.urunEkle.Size = new System.Drawing.Size(94, 29);
@@ -97,6 +103,7 @@
             // 
             // txtDesc
             // 
+            this.txtDesc.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtDesc.Location = new System.Drawing.Point(178, 101);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(125, 27);
@@ -104,6 +111,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(130, 451);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
@@ -117,7 +125,7 @@
             this.satildi.AutoSize = true;
             this.satildi.Location = new System.Drawing.Point(15, 46);
             this.satildi.Name = "satildi";
-            this.satildi.Size = new System.Drawing.Size(81, 24);
+            this.satildi.Size = new System.Drawing.Size(94, 23);
             this.satildi.TabIndex = 21;
             this.satildi.TabStop = true;
             this.satildi.Text = "SATILDI";
@@ -128,7 +136,7 @@
             this.satilmadi.AutoSize = true;
             this.satilmadi.Location = new System.Drawing.Point(196, 46);
             this.satilmadi.Name = "satilmadi";
-            this.satilmadi.Size = new System.Drawing.Size(104, 24);
+            this.satilmadi.Size = new System.Drawing.Size(121, 23);
             this.satilmadi.TabIndex = 22;
             this.satilmadi.TabStop = true;
             this.satilmadi.Text = "SATILMADI";
@@ -137,14 +145,16 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(28, 214);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 20);
+            this.label4.Size = new System.Drawing.Size(110, 19);
             this.label4.TabIndex = 24;
             this.label4.Text = "ÜRÜN ADETİ";
             // 
             // urunAdet
             // 
+            this.urunAdet.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.urunAdet.Location = new System.Drawing.Point(178, 214);
             this.urunAdet.Name = "urunAdet";
             this.urunAdet.Size = new System.Drawing.Size(125, 27);
@@ -154,6 +164,7 @@
             // 
             this.panel1.Controls.Add(this.satildi);
             this.panel1.Controls.Add(this.satilmadi);
+            this.panel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(21, 267);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(333, 125);
