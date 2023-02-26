@@ -20,14 +20,14 @@ namespace proje
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void musKayit_Click(object sender, EventArgs e)
         {
             this.Hide();
             MusteriKayit form = new MusteriKayit();
             form.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void musList_Click(object sender, EventArgs e)
         {
             SqlBaglantisi sql = new SqlBaglantisi();
             string dt = "SELECT AdiSoyadi , Telefon , Adres From Kullanici; ";
@@ -45,6 +45,13 @@ namespace proje
             this.Hide();
             Urunler form = new Urunler();
             form.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
         }
     }
 }

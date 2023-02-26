@@ -21,7 +21,7 @@ namespace proje
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void musKayit_Click(object sender, EventArgs e)
         {
             SqlBaglantisi sql = new SqlBaglantisi();
 
@@ -31,7 +31,7 @@ namespace proje
             SqlCommand ekle = new SqlCommand(da, baglan);
             ekle.Parameters.AddWithValue("@p1", txtName.Text);
             ekle.Parameters.AddWithValue("@p2", dtBirthday.Value);
-            ekle.Parameters.AddWithValue("@p3", Convert.ToInt32(txtPhone.Text));
+            ekle.Parameters.AddWithValue("@p3", Convert.ToInt64(txtPhone.Text));
             ekle.Parameters.AddWithValue("@p4", txtAdress.Text);
             ekle.Parameters.AddWithValue("@p5", txtMail.Text);
             ekle.ExecuteNonQuery();
@@ -40,6 +40,13 @@ namespace proje
             MusteriGiris form2 = new MusteriGiris();
             form2.Show();
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MusteriGiris form2 = new MusteriGiris();
+            form2.Show();
         }
     }
 }

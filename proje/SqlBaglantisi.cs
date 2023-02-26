@@ -10,7 +10,7 @@ namespace proje
     class SqlBaglantisi
     {
         public SqlConnection baglanti() {
-            SqlConnection sql = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=model;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection sql = new SqlConnection("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = Proje; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
             return sql;
         }
     }

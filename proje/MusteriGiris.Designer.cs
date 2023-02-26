@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.musList = new System.Windows.Forms.Button();
+            this.musKayit = new System.Windows.Forms.Button();
             this.MusteriListele = new System.Windows.Forms.DataGridView();
             this.UrunListele = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MusteriListele)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,25 +45,25 @@
             this.comboBox1.Size = new System.Drawing.Size(200, 28);
             this.comboBox1.TabIndex = 0;
             // 
-            // button1
+            // musList
             // 
-            this.button1.Location = new System.Drawing.Point(12, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Müşteri Listele";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.musList.Location = new System.Drawing.Point(12, 115);
+            this.musList.Name = "musList";
+            this.musList.Size = new System.Drawing.Size(200, 29);
+            this.musList.TabIndex = 1;
+            this.musList.Text = "Müşteri Listele";
+            this.musList.UseVisualStyleBackColor = true;
+            this.musList.Click += new System.EventHandler(this.musList_Click);
             // 
-            // button2
+            // musKayit
             // 
-            this.button2.Location = new System.Drawing.Point(12, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Müsteri Kayıt";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.musKayit.Location = new System.Drawing.Point(12, 12);
+            this.musKayit.Name = "musKayit";
+            this.musKayit.Size = new System.Drawing.Size(200, 29);
+            this.musKayit.TabIndex = 2;
+            this.musKayit.Text = "Müsteri Kayıt";
+            this.musKayit.UseVisualStyleBackColor = true;
+            this.musKayit.Click += new System.EventHandler(this.musKayit_Click);
             // 
             // MusteriListele
             // 
@@ -84,15 +85,26 @@
             this.UrunListele.UseVisualStyleBackColor = true;
             this.UrunListele.Click += new System.EventHandler(this.UrunListele_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(275, 115);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "GERİ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MusteriGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 437);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.UrunListele);
             this.Controls.Add(this.MusteriListele);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.musKayit);
+            this.Controls.Add(this.musList);
             this.Controls.Add(this.comboBox1);
             this.Name = "MusteriGiris";
             this.Text = "Müsteri Giris";
@@ -104,9 +116,10 @@
         #endregion
 
         private ComboBox comboBox1;
-        private Button button1;
-        private Button button2;
+        private Button musList;
+        private Button musKayit;
         private DataGridView MusteriListele;
         private Button UrunListele;
+        private Button button1;
     }
 }

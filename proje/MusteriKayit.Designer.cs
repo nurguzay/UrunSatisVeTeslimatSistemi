@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.musKayit = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtAdress = new System.Windows.Forms.TextBox();
@@ -39,17 +39,18 @@
             this.dtBirthday = new System.Windows.Forms.DateTimePicker();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // musKayit
             // 
-            this.button1.Location = new System.Drawing.Point(176, 328);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "kayıt et";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.musKayit.Location = new System.Drawing.Point(176, 328);
+            this.musKayit.Name = "musKayit";
+            this.musKayit.Size = new System.Drawing.Size(94, 29);
+            this.musKayit.TabIndex = 0;
+            this.musKayit.Text = "KAYDET";
+            this.musKayit.UseVisualStyleBackColor = true;
+            this.musKayit.Click += new System.EventHandler(this.musKayit_Click);
             // 
             // txtName
             // 
@@ -133,11 +134,22 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "E - Mail";
             // 
-            // MüsteriKayit
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(176, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "GERİ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // MusteriKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtMail);
             this.Controls.Add(this.dtBirthday);
@@ -148,8 +160,8 @@
             this.Controls.Add(this.txtAdress);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.button1);
-            this.Name = "MüsteriKayit";
+            this.Controls.Add(this.musKayit);
+            this.Name = "MusteriKayit";
             this.Text = "Müsteri Kayit";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,7 +170,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button musKayit;
         private TextBox txtName;
         private TextBox txtPhone;
         private TextBox txtAdress;
@@ -169,5 +181,6 @@
         private DateTimePicker dtBirthday;
         private TextBox txtMail;
         private Label label5;
+        private Button button1;
     }
 }

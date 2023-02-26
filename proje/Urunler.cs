@@ -18,17 +18,17 @@ namespace proje
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void main_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MusteriGiris form = new MusteriGiris();
+            Menu form = new Menu();
             form.Show();
         }
 
         private void UrunListele_Click(object sender, EventArgs e)
         {
             SqlBaglantisi sql = new SqlBaglantisi();
-            string dt = "SELECT Urunler.Id , UrunAdi , UrunAciklamasi , UrunFiyati , AdiSoyadi FROM Urunler JOIN Kullanici ON Kullanici.Id = Urunler.KullaniciId;";
+            string dt = "SELECT Id , UrunAdi , UrunAciklamasi , UrunFiyati , Satildi FROM Urunler WHERE Satildi = 1 ;";
             var baglan = sql.baglanti();
             baglan.Open();
             SqlDataAdapter listele = new SqlDataAdapter(dt, baglan);
@@ -38,9 +38,9 @@ namespace proje
             baglan.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void urunSil_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow drow in DtUrunListele.SelectedRows)  //Seçili Satırları Silme
+            foreach (DataGridViewRow drow in DtUrunListele.SelectedRows)  
             {
                 int numara = Convert.ToInt32(drow.Cells[0].Value);
                 SqlBaglantisi sql = new SqlBaglantisi();
@@ -60,6 +60,34 @@ namespace proje
         private void Urunler_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void urunEkle_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UrunKayit form = new UrunKayit();
+            form.Show();
+        }
+
+        private void urunGuncelle_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UrunGuncelle form = new UrunGuncelle();
+            form.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlBaglantisi sql = new SqlBaglantisi();
+            string dt = "SELECT * FROM Urunler";
+            var baglan = sql.baglanti();
+            baglan.Open();
+            SqlDataAdapter listele = new SqlDataAdapter(dt, baglan);
+            DataSet ds = new DataSet();
+            listele.Fill(ds);
+            DtUrunListele.DataSource = ds.Tables[0];
+            baglan.Close();
         }
     }
 }
