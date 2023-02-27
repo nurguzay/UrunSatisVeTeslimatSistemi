@@ -1,5 +1,6 @@
 namespace proje
 {
+    //NUR SEDA GÜZAY
     internal static class Program
     {
         /// <summary>
