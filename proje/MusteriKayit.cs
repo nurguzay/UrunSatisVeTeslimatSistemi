@@ -36,9 +36,7 @@ namespace proje
             ekle.Parameters.AddWithValue("@p5", txtMail.Text);
             ekle.ExecuteNonQuery();
             baglan.Close();
-            this.Hide();
-            MusteriGiris form2 = new MusteriGiris();
-            form2.Show();
+            MessageBox.Show("Müþteri Kaydedildi.");
             
         }
 
