@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrunGuncelle));
             this.dtUrunGuncelle = new System.Windows.Forms.DataGridView();
             this.guncelle = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -36,19 +37,24 @@
             // 
             // dtUrunGuncelle
             // 
+            this.dtUrunGuncelle.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtUrunGuncelle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtUrunGuncelle.Location = new System.Drawing.Point(12, 12);
+            this.dtUrunGuncelle.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtUrunGuncelle.Location = new System.Drawing.Point(15, 95);
+            this.dtUrunGuncelle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtUrunGuncelle.Name = "dtUrunGuncelle";
             this.dtUrunGuncelle.RowHeadersWidth = 51;
             this.dtUrunGuncelle.RowTemplate.Height = 29;
-            this.dtUrunGuncelle.Size = new System.Drawing.Size(776, 352);
+            this.dtUrunGuncelle.Size = new System.Drawing.Size(970, 387);
             this.dtUrunGuncelle.TabIndex = 0;
             // 
             // guncelle
             // 
-            this.guncelle.Location = new System.Drawing.Point(310, 390);
+            this.guncelle.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.guncelle.Location = new System.Drawing.Point(224, 56);
+            this.guncelle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guncelle.Name = "guncelle";
-            this.guncelle.Size = new System.Drawing.Size(94, 29);
+            this.guncelle.Size = new System.Drawing.Size(214, 32);
             this.guncelle.TabIndex = 1;
             this.guncelle.Text = "GÜNCELLE";
             this.guncelle.UseVisualStyleBackColor = true;
@@ -56,9 +62,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(572, 390);
+            this.button2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(551, 56);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.Size = new System.Drawing.Size(214, 32);
             this.button2.TabIndex = 3;
             this.button2.Text = "GERİ";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,14 +74,18 @@
             // 
             // UrunGuncelle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ClientSize = new System.Drawing.Size(1000, 495);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.guncelle);
             this.Controls.Add(this.dtUrunGuncelle);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "UrunGuncelle";
-            this.Text = "UrunGuncelle";
+            this.Text = "Urun Guncelle";
             this.Load += new System.EventHandler(this.UrunGuncelle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtUrunGuncelle)).EndInit();
             this.ResumeLayout(false);

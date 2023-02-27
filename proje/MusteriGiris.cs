@@ -40,12 +40,6 @@ namespace proje
             baglan.Close();
         }
 
-        private void UrunListele_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Urunler form = new Urunler();
-            form.Show();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
