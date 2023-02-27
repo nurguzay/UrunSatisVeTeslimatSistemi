@@ -89,5 +89,13 @@ namespace proje
             DtUrunListele.DataSource = ds.Tables[0];
             baglan.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Teslimat form = new Teslimat();
+            form.Show();
+
+        }
     }
 }
